@@ -1,0 +1,18 @@
+a,
+.uk-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+.uk-link:hover {
+  color: $link-hover-colour;
+  outline: $link-outline;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}

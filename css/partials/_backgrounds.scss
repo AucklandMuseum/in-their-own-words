@@ -1,0 +1,12 @@
+        .bcg {
+            background: no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        #home .bcg {
+            background-image: url('../images/bkgrd/bcia-background.jpg');
+        }

@@ -1,0 +1,111 @@
+body { 
+  background: url(../images/bkgrd/bcia-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: $font-gotham;
+}
+
+.am-brand {
+    font-family: $font-auckland-museum;  
+    font-weight: $font-medium;
+    font-size: 90px;
+    color: $text-colour;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+        @media (max-width: 767px) {  
+
+          .am-brand {
+              font-size: 61px;
+          }
+
+        }
+
+        .am-brand-chinese {
+            font-family: Arial,'Hiragino Sans GB',STXihei,'Microsoft YaHei',sans-serif;  
+            font-weight: $font-medium;
+            font-size: 90px;
+            color: $text-colour;
+            line-height: 1.2em;
+            text-transform: uppercase;
+        }
+
+
+        .title-keyline {
+          border-top: 6px solid #fff;
+          width: 34%;
+          margin: 0 auto;
+         }
+
+        .bio-keyline {
+          border-top: 3px solid #fff;
+          width: 20%;
+          margin: 3.2em 0 3.2em 0;
+         }
+
+
+.touch-start {
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+.gradient {
+  background:
+    linear-gradient(
+      to top, 
+      #010101, #50504e
+    ),
+    url(../images/people/johnny-hui-1800x1200.jpg);
+}
+
+.cover {
+  background-color: black;
+  opacity:.9;
+  height:100%; 
+  width:100%;
+
+}
+
+.tile {
+  position:relative;
+  z-index:-1;
+  display:block;
+  height:auto; 
+  width:auto;
+}
+
+.tile-overlay-weak {
+    background: rgba(34, 34, 34, 0.8);
+    opacity:0.3;
+}
+
+.tile-overlay-medium {
+    background: rgba(34, 34, 34, 0.8);
+    opacity:0.6;
+}
+
+.tile-overlay-strong {
+    background: rgba(34, 34, 34, 0.8);
+    opacity:0.9;
+}
+
+.go-home-icon {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.go-home-text {
+  letter-spacing: 1px;
+}
+
+.listen-cta {
+  padding-right: 1.6em;
+}
+
+.am-padding-top {
+  padding-top: 1.6em;
+}
+

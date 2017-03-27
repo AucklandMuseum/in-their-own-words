@@ -1,0 +1,111 @@
+.am-interview h1,
+.am-interview h2,
+.am-interview h3,
+.audio-player h3,
+.uk-article-meta,
+.uk-text-lead
+ {
+	color: white;
+  font-family: $font-gotham;
+}
+
+.am-interview h1 {
+	text-transform: uppercase;
+}
+
+
+.am-interview h2 {
+	letter-spacing: 2px;
+}
+
+
+/*  https://codepen.io/maxds/pen/DcveB/ */
+
+blockquote {
+  display:block;
+  padding: 0 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  
+  /*Font*/
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  font-style: normal;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+blockquote.chinese::before{
+  content: "\300C"; /* Unicode for Left Double Quote */
+
+  /*Positioning*/
+  left: -10px;
+  top: -10px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+  content: "\201D"; /* Unicode for Right Double Quote */
+
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  right: 16px;
+  bottom: -22px;
+}
+
+blockquote.chinese::after{
+  content: "\300D"; /*Unicode for Left Double Quote*/
+
+  /*Positioning*/
+  right: 5px;
+  bottom: 0;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+.chinese {
+  font-family: Arial,'Hiragino Sans GB',STXihei,'Microsoft YaHei',sans-serif;
+}
+
+/* Remove UIKit margin if adjacent element */
+* + h1,
+* + .uk-h1,
+* + h2,
+* + .uk-h2,
+* + h3,
+* + .uk-h3,
+* + h4,
+* + .uk-h4,
+* + h5,
+* + .uk-h5,
+* + h6,
+* + .uk-h6 {
+  margin-top: 0; 
+}
+
+
+
+

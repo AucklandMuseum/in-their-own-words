@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>In Their Own Words | Being Chinese in Aotearoa | Auckland War Memorial Museum</title>
+        <meta name="description" content=".">
+        <meta name="author" content="Auckland War Memorial Museum">
+
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" type="text/css" href="css/amstyle.css" />
+
+        <!-- Google Analytics
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script>
+            <!-- GA code -->
+        </script>
+
+        <!-- JS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="js/script.js"></script>
+
+    </head>
+
+    <body id="home" ontouchstart="">
+
+        <!-- Primary Page Layout
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                
+        <!-- Interview: Johnny -->
+        <div id="johnny-hui" class="panel am-padding-top">
+
+            <div class="uk-container">
+
+                <div class="uk-grid-small uk-child-width-1-2@m uk-grid-match" uk-grid>
+                    
+                    <div>
+                        <div class="uk-panel">
+
+                            <a href="index.html">
+
+                                <button id="stopJohnny" class="btn btn-3 btn-3a icon-home en" type="button">Home</button>
+
+                                <button id="stopJohnny-b" class="btn btn-3 btn-3a icon-home fr chinese" type="button">首頁</button>
+                                
+                            </a>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-text-right">
+
+                            <ul class="switchlang">
+                                <li id="en_click" class="button_lang current_lang">En</li>
+                                <li id="ch_click" class="button_lang">中文</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+
+                    <div>
+
+                        <div class="uk-panel">
+
+                            <!-- Hero image and and pull-quote -->
+                            <div>
+                                <div class="uk-panel">
+                                    <img src="images/people/johnny-hui-1800x1200.jpg" alt="Johnny Hui.">
+                                </div>
+                            </div>
+
+                            <div>      
+
+                                <div class="audio-player uk-margin-top">
+                                    <div class="uk-margin-bottom">
+                                        <img src="images/headphones.png" class="headphones" />
+                                        <h3 class="uk-margin-remove-top align-icon">Listen to Johnny's story</h3>
+                                    </div> 
+                                    <audio id="audio-player-johnny" preload="none" src="interviews/johnny.mp3" type="audio/mp3" controls="controls"></audio>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="uk-panel">
+
+                            <!-- Bio and player -->
+                            <article class="am-interview">
+
+                                <!-- BIO -->
+                                <div class="bio">
+
+                                    <h1 class="en">Johnny Hui (Hui Chung Hang)</h1>
+                                    <h1 class="fr chinese">許中行</h1>  
+
+                                    <h2 class="en">Family and early years programmer</h2>
+                                    <h2 class="fr chinese">家庭暨幼年觀眾活動項目經理</h2>  
+
+                                    <p class="en uk-text-large uk-margin-medium-top uk-margin-remove-bottom">
+                                        Johnny was born in Hong Kong and moved to New Zealand, aged four, with his family in 1989. He is equally proud of both his Chinese and New Zealand heritage.
+                                    </p>
+
+                                    <p class="fr chinese uk-text-large uk-margin-medium-top uk-margin-remove-bottom">
+                                        許中行出生在香港，1989年，四歲時，隨家人來到新西蘭。他對自己所承襲的中國及新西蘭文化遺產懷有同等自豪感。
+                                    </p>  
+
+                                </div> 
+
+                                <div class="uk-panel uk-margin-large-top">
+
+                                    <!-- PULL QUOTE -->
+                                    <blockquote class="en">
+
+                                        <p class="uk-text-lead en">
+                                    
+                                            I would classify myself as a New Zealander Chinese &hellip; It’s a difficult and interesting concept – is it New Zealand Chinese or Chinese New Zealander?
+                                        </p>
+
+                                    </blockquote>
+
+                                    <blockquote class="fr chinese">
+
+                                        <p class="uk-text-lead fr chinese">
+                                            我願意將自己歸類為新西蘭華人 …… 這是一個難以理解、有意思的概念。是新西蘭的華人還是華裔新西蘭人呢？
+                                        </p>
+
+                                    </blockquote>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /uk-container -->
+
+        </div>
+        <!-- /Interview: Johnny -->
+
+
+        <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <!-- Scripts
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+
+            document.getElementById('stopJohnny').onclick = function() {
+              var sounds = document.getElementsByTagName('audio');
+              for(i=0; i<sounds.length; i++) sounds[i].pause();
+            };
+
+            document.getElementById('stopJohnny-b').onclick = function() {
+              var sounds = document.getElementsByTagName('audio');
+              for(i=0; i<sounds.length; i++) sounds[i].pause();
+            };
+
+        </script>
+
+    </body>
+
+</html>

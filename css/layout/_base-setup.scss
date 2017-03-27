@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 1em;
+    background: #50504e;
+    z-index: -1;
+}
+
+
+body {
+	width: 100%;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	font-family: $font-gotham-small;
+	font-weight: $font-book;
+	font-size: $base-font-size;
+	color: $text-colour;
+	line-height: $base-line-height;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+}

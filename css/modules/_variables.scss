@@ -1,0 +1,224 @@
+$gutter: 20px;
+$column-count: 16;
+$desktop-container-width: 960px;
+$tablet-container-width: 768px;
+$mobile-container-width: 420px;
+$mobile-column-width: 100%;
+
+$form-element-font: "Proxima N W15 Cd Reg", Helvetica, Arial, sans-serif;
+
+$form-input-border: 1px solid #ccc;
+$form-input-text-colour: #777;
+$form-input-background: #fff;
+$form-input-padding: 6px 4px;
+$form-input-width: 100%;
+$form-input-select-width: 220px;
+$form-input-margin: 0 0 20px 0;
+$form-input-font-size: 13px;
+
+$form-input-focus-border: 1px solid #aaa;
+$form-input-focus-text-colour: #444;
+
+$form-label-legend-colour: #444;
+$form-fieldset-margin: 0 0 20px 0;
+
+$legend-font-weight: bold;
+$legend-font-size: $form-input-font-size;
+
+$link-colour: #000;
+$link-decoration: none;
+$link-outline: 0;
+$link-hover-colour: #000;
+$link-hover-decoration: underline;
+
+$heading-font: "Proxima N W15 Cd Bold", Helvetica, Arial, sans-serif;
+$heading-font-weight: normal;
+$heading-colour: #181818;
+
+$heading1-font-size: 42px;
+
+$heading1-margin: -5px 0 15px 0;
+
+$heading2-font-size: 26px;
+
+$heading2-margin: 0 0 10px 0;
+
+$heading3-font-size: 22px;
+
+$heading3-margin: 0 0 16px 0;
+
+$heading4-font-size: 18px;
+
+$heading4-margin: 0 0 12px 0;
+
+$heading5-font-size: 14px;
+
+$heading5-margin: 0 0 6px 0;
+
+$heading6-font-size: 14px;
+
+$heading6-margin: 0 0 6px 0;
+
+$subheader-colour: #777;
+
+$paragraph-margin: 0 0 16px 0;
+$paragraph-image-margin: 0;
+
+$paragraph-lead-font-size: 21px;
+$paragraph-lead-line-height: 27px;
+$paragraph-lead-colour: #777;
+
+$strong-colour: #333;
+
+$blockquote-colour: #777;
+$blockquote-border-left: 1px solid #ddd;
+$blockquote-cite-colour: #555;
+$blockquote-cite-link-colour: #555;
+$blockquote-cite-font-size: 12px;
+$blockquote-margin: 0 0 20px;
+$blockquote-padding: 9px 20px 0 19px;
+
+$hr-border: solid #ddd;
+$hr-border-width: 1px 0 0;
+$hr-margin: 10px 0 30px;
+
+$body-font-family: "Proxima N W15 Cd Reg", Helvetica, Arial, sans-serif;
+
+$list-margin: 16px 0 16px 40px;
+$list-large-line-height: 1.4em;
+
+$ul-list-style: disc outside;
+$ol-list-style: decimal outside;
+
+$list-styled-margin: 0 0 0 30px; // ul, ol with disc, square etc.
+
+$nested-list-margin: 12px 0 5px 30px;
+$nested-list-font-size: 90%;
+
+$list-item-line-height: 1.3em;
+$list-item-margin: 0 0 12px 0;
+$list-item-paragraph-line-height: 1.3em;
+
+$fallback-hex-gradient-bg: #ccc;
+
+
+// Typography
+// -------------------------
+
+$font-gotham:       'Gotham Narrow A', 'Gotham Narrow B'; // Large text
+$font-gotham-small:       'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; // Small text
+$font-auckland-museum:       'Auckland Museum'; // Branded text
+
+$font-book:       400;
+$font-medium:     500;
+$font-bold:       700;
+
+$sans-font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family:       Georgia, "Times New Roman", Times, serif;
+$mono-font-family:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$base-font-size:          16px;
+$base-font-family:        $sans-font-family;
+$base-line-height:        1.4em;
+$alt-font-family:         $serif-font-family;
+
+$headings-font-family:    inherit; // empty to use BS default, $base-font-family
+$headings-font-weight:    bold;    // instead of browser default, bold
+$headings-colour:         inherit; // empty to use BS default, $text-colour
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+$font-size-large:         $base-font-size * 1.25; // ~18px
+$font-size-small:         $base-font-size * .85; // ~12px
+$font-size-mini:          $base-font-size * .75; // ~11px
+
+$padding-large:          11px 19px; // 44px
+$padding-small:          2px 10px;  // 26px
+$padding-mini:           0 6px;   // 22px
+
+$base-border-radius:      4px;
+$border-radius-large:     6px;
+$border-radius-small:     3px;
+
+$border-light:     1px;
+$border-heavy:     5px;
+
+
+// AKM Colors
+// -------------------------
+
+$colour-gold:         #cc3;
+$colour-red:          #c03;
+$colour-orange:         #f60;
+$colour-yellow:         #ff0;
+$colour-dark-green:      #093;
+$colour-turquoise:      #14a79d;
+$colour-light-blue:      #0cc;
+$colour-dark-blue:       #009;
+$colour-purple:         #609;
+$colour-pink:         #f39;
+
+// Wash - basic CMYK 10% tint and RGB equivalent
+$colour-gold-wash:      lighten($colour-gold, 40%);
+$colour-red-wash:         lighten($colour-red, 40%);
+$colour-orange-wash:      lighten($colour-orange, 40%);
+$colour-yellow-wash:      lighten($colour-yellow, 40%);
+$colour-dark-green-wash:     lighten($colour-dark-green, 40%);
+$colour-turquoise-wash:     lighten($colour-turquoise, 40%);
+$colour-light-blue-wash:     lighten($colour-light-blue, 40%);
+$colour-dark-blue-wash:    lighten($colour-dark-blue, 40%);
+$colour-purple-wash:      lighten($colour-purple, 40%);
+$colour-pink-wash:      lighten($colour-pink, 40%);
+
+// // Light - 50% opacity
+$colour-gold-light:      lighten($colour-gold, 30%);
+$colour-red-light:       lighten($colour-red, 30%);
+$colour-orange-light:      lighten($colour-orange, 30%);
+$colour-yellow-light:      lighten($colour-yellow, 30%);
+$colour-dark-green-light:     lighten($colour-dark-green, 30%);
+$colour-turquoise-light:     lighten($colour-turquoise, 30%);
+$colour-light-blue-light:     lighten($colour-light-blue, 30%);
+$colour-dark-blue-light:    lighten($colour-dark-blue, 30%);
+$colour-purple-light:      lighten($colour-purple, 30%);
+$colour-pink-light:      lighten($colour-pink, 30%);
+
+// // Dark - basic CMYK with K75% and RGB equivalent
+$colour-red-dark: darken($colour-red, 25%);
+$colour-orange-dark: darken($colour-orange, 25%);
+$colour-yellow-dark: darken($colour-yellow, 25%);
+$colour-dark-green-dark: darken($colour-dark-green, 25%);
+$colour-turquoise-dark: darken($colour-turquoise, 25%);
+$colour-light-blue-dark: darken($colour-light-blue, 25%);
+$colour-dark-blue-dark: darken($colour-dark-blue, 25%);
+$colour-purple-dark: darken($colour-purple, 25%);
+$colour-pink-dark: darken($colour-pink, 25%);
+
+// Brand extras
+// -------------------------
+$green:                  #8bc947; // Tag selected state
+
+
+// Grays
+// -------------------------
+$black:                 #000;
+$gray-darker:            #222;
+$gray-dark:              #333;
+$gray:                  #6d6d6d;
+$gray-light:             #999;
+$gray-lighter:           #ccc;
+$gray-lightess:          #eee;
+$white:                 #fff;
+
+// Scaffolding
+// -------------------------
+$text-colour:             $gray-dark;
+$text-colour:             $white;
+
+
+// Links
+// -------------------------
+$link-colour:             #4354c4;
+$link-colour-hover:       darken($link-colour, 15%);

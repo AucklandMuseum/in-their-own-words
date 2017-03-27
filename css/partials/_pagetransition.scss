@@ -1,0 +1,32 @@
+      /* Transition effect - http://tympanus.net/codrops/2012/01/30/page-transitions-with-css3/
+      –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+    .content{
+      height: 100vh;    
+      right: 0px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      padding-bottom: 0px;
+    }
+
+    .panel{
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+      margin-top: -150%;
+      opacity: 0;
+      -webkit-transition: opacity .6s ease-in-out;
+      -moz-transition: opacity .6s ease-in-out;
+      -o-transition: opacity .6s ease-in-out;
+      -ms-transition: opacity .6s ease-in-out;
+      transition: opacity .6s ease-in-out;
+      background-image: url('../images/bkgrd/bcia-background.jpg');
+    }
+    .panel:target{
+      opacity: 1;
+      margin-top: 0%;
+    }
